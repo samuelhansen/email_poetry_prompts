@@ -9,7 +9,7 @@ For more detailed information, check the blog post below.
 
 - [Python script](https://github.com/MPCaloba/Daily_Quotes/blob/main/daily_reminders.py)
 ## 🔗 Links
-- [Blog Article]()
+- [Blog Article](https://medium.com/@marco_caloba/c918c962e6b0)
 - [Personal website](https://mcaloba-04272.stackbit.app/)
 - [LinkdIn](https://www.linkedin.com/in/marcocaloba/)
 - [Medium](https://medium.com/@marco_caloba)
