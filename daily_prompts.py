@@ -8,14 +8,14 @@ from email.message import EmailMessage
 import csv
 
 
-## For more information about configuration please go here https://docs.python.org/3/library/smtplib.html
+
 ## Email configuration
 smtp_server = "smtp.gmail.com"
 smtp_port_tls = 587
 #smtp_port_ssl = 465
-email_address = "asdf@asfd.com"
-email_password = "password here (use app password if possible"
-recipient_email = "asdfasdf@asdfasdf.com"
+email_address = "sender@send.com"
+email_password = "fake password"
+recipient_email = ['list@send.com', 'of@send.com', 'recipients@send.com']
 
 
 ## Set up the log file
@@ -47,7 +47,7 @@ def get_random_numbers(n):
 def e_mail_prep(string):
     message = EmailMessage()
     message["From"] = email_address
-    message["To"] = recipient_email
+    message["BCC"] = recipient_email
     message["Subject"] = f"Poetry Prompt - {datetime.date.today()}"
     message.set_content(string)
     return message
@@ -64,7 +64,7 @@ def send_e_mail(message):
 ## Main function
 def main():
     try:
-        file_path='path_to_file'
+        file_path='/path/to/email_poetry_prompts/prompts.csv'
         prompts = read_prompt_csv(file_path)
         prompt_cnt=len(prompts)
 
