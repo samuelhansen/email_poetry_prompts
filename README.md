@@ -12,6 +12,8 @@ For scheduling on my mac I have used `crontab` with the following setting for on
 
 If `crontab` is not working on your Mac, I was able to get it working by getting Vim fully configured using the Basic Version from this [Git Repo](https://github.com/amix/vimrc)
 
+If `crontab` continues to not work you may have to manually add `cron` to the list of apps in `System Preferences->Security & Privacy->Privacy->Full Disk Access` as outlined in this [Stack Exchange Tread](https://apple.stackexchange.com/questions/38861/where-is-the-cron-log-file-in-macosx-lion)
+
 For more detailed information (instead of a CSV it references Notion), check the blog post below.
 
 Based on [Blog Article](https://medium.com/@marco_caloba/c918c962e6b0)
