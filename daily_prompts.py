@@ -14,7 +14,7 @@ smtp_server = "smtp.gmail.com"
 smtp_port_tls = 587
 #smtp_port_ssl = 465
 email_address = "sender@send.com"
-email_password = os.getenv('emailpass')
+email_password = os.getenv('EMAILPASS')
 recipient_email = ['list@send.com', 'of@send.com', 'recipients@send.com']
 
 
