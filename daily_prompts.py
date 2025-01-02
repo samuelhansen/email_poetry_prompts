@@ -1,7 +1,7 @@
 ## Import the necessary packages
 import smtplib
 import datetime
-import json
+import os
 import random
 import logging
 from email.message import EmailMessage
@@ -14,7 +14,7 @@ smtp_server = "smtp.gmail.com"
 smtp_port_tls = 587
 #smtp_port_ssl = 465
 email_address = "sender@send.com"
-email_password = "fake password"
+email_password = os.getenv('emailpass')
 recipient_email = ['list@send.com', 'of@send.com', 'recipients@send.com']
 
 
