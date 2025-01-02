@@ -8,7 +8,7 @@ Add your own email app password to the  `.cron_setup` file.
 
 For scheduling on my mac I have used `crontab` with the following setting for one prompt every three days
 
-```53 5 1-31/3 * * source /path/to/email_poetry_prompts/.cron_setup; /path/to/bin/python3 /Users/    /path/to/email_poetry_prompts/daily_prompts.py```
+```53 5 1-31/3 * * . /path/to/email_poetry_prompts/.cron_setup; /path/to/bin/python3 /Users/    /path/to/email_poetry_prompts/daily_prompts.py```
 
 If `crontab` is not working on your Mac, I was able to get it working by getting Vim fully configured using the Basic Version from this [Git Repo](https://github.com/amix/vimrc)
 
